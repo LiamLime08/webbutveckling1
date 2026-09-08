@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
@@ -18,13 +19,14 @@
     <main>
         <form>
             <label for="name">Namn:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" autocomplete="name" required placeholder="Förnamn Efternamn">
             <label for="email">E-Post:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" autocomplete="email" required placeholder="exempel@exempel.se">
             <label for="subject">Ämne:</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" required placeholder="Ämne">
             <label for="description">Beskriv ditt ärende:</label>
-            <textarea name="description" id="description"></textarea>
+            <textarea name="description" id="description" required placeholder="Beskriv ditt ärende..."></textarea>
+            <button type="submit">Skicka</button>
         </form>
     </main>
     <footer>

@@ -1,43 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #008148;
+    --textcolor: #034732;
+    --accentcolor: #BEE7B8;
+    --accentcolor2: #362309;
+}
+
 body {
-    background-color: rgb(79, 147, 87);
+    background-color: var(--bgcolor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 header {
-  font-family: "Google Sans Flex", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  font-weight: 900;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "ROND" 0;
-}
-nav {
-    border-bottom: 1px solid black;
-}
+  font-size: 30px;
+  color: var(--accentcolor2);}
+
 nav a {
     color: black;
     text-decoration: none;
+    margin: 5px;
     padding: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 5px black;
+    font-family: "Google Sans Flex", sans-serif;
 }
+
 nav a:hover {
     box-shadow: 0 3px 5px black;
 }
+
 nav a:active {
     box-shadow: 0 1px 3px black;
 }
-h1, h2, h3 {
+
+h2, h3 {
     text-align: center;
+    font-family: "Google Sans Flex", sans-serif;
+    color: var(--accentcolor2);
 }
+
 .subhead{
-    font-size: 25px;
+    font-size: 28px;
 }
+
 .max {
     max-width: 60dvw;
+}
+
+p {
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+hr {
+    border: 1px solid var(--accentcolor2);
+}
+
+.bild {
+    max-width: 25dvw;
+}
+
+.column {
+    width: 60dvw;
+    margin: 30px;
+    padding: 20px;
+    background-color: var(--accentcolor);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    border-radius: 10px;
+    width: 50%;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    
+}
+
+.row img {
+    width: 100%;
+}
+
+.row section {
+    flex: 1;
+    margin: 30px;
+    padding: 35px;
+    background-color: var(--accentcolor);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
 }

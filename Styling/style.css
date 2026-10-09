@@ -9,7 +9,7 @@
     --bgcolor: #008148;
     --textcolor: #034732;
     --accentcolor: #BEE7B8;
-    --accentcolor2: #362309;
+    --accentcolor2: #56370b;
 }
 
 body {
@@ -18,14 +18,35 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 header {
-  font-family: "Rubik", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 30px;
-  color: var(--accentcolor2);}
+
+    background-color: var(--accentcolor);
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accentcolor);
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid var(--accentcolor2);
+}
+
+nav {
+    background-color: var(--accentcolor);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 2px solid var(--accentcolor2);
+}
 
 nav a {
     color: black;
@@ -45,8 +66,17 @@ nav a:active {
     box-shadow: 0 1px 3px black;
 }
 
+h1 {
+    margin-bottom: 40px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: var(--accentcolor2);
+}
+
 h2, h3 {
-    text-align: center;
+    text-align: center;    
     font-family: "Google Sans Flex", sans-serif;
     color: var(--accentcolor2);
 }
@@ -69,6 +99,8 @@ hr {
 
 .bild {
     max-width: 25dvw;
+    border-radius: 5px;
+
 }
 
 .column {
@@ -79,6 +111,10 @@ hr {
     border-radius: 10px;
     box-shadow: 0 0 10px black;
     text-align: center;
+}
+
+.column a {
+    text-decoration: none;
 }
 
 .content {
@@ -96,19 +132,32 @@ hr {
 
 .row {
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
 .row img {
     width: 100%;
+    height: 85%;
+    object-fit:scale-down;
+    border-radius: 5px;
 }
 
 .row section {
     flex: 1;
     margin: 30px;
     padding: 35px;
+    padding-bottom: 0px;
     background-color: var(--accentcolor);
     border-radius: 10px;
     box-shadow: 0 0 10px black;
+}
+
+.subtitle {
+    background-color: var(--accentcolor);
+    padding: 5px;
+    border-radius: 5px;
     text-align: center;
+    box-shadow: 0 0 5px black;
+    margin-inline: auto;
+    width: fit-content;
 }

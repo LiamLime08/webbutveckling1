@@ -1,0 +1,53 @@
+#content {
+    background-color: rgba(255, 255, 255, 0.79);
+    display: flex;
+    justify-content: center;
+}
+
+#vagn {
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    width: 80%;
+}
+
+.row {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.row img {
+    height: 100%;
+}
+
+.row > * {
+    align-self: center;
+    font-size: 40px;
+}
+
+.row p:nth-child(5) {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+#pay {
+    background-color: orange;
+    padding: 10px;
+    outline-color: lightgray;
+    outline-style: outset;
+}
+
+#back {
+    background-color: #c4b18e;
+    padding: 10px;
+    outline-color: lightgray;
+    outline-style: outset;
+}
+
